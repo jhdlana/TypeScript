@@ -51,10 +51,23 @@ function logout() {
 login("ju") // user : "ju"
 logout() // user : null
 
+var myNull:null = null;
+console.log("Null", myNull)
+
 // any 타입 (어떠한 값도 참고 가능)
 
 let someValue: any;
 
-someValue.toString();
-someValue = false;
-someValue.toFixed();
+// someValue.toString();
+// someValue = false;
+// someValue.toFixed();
+
+var myAny: any = "This can be anything";
+console.log("Any string: ", myAny)
+
+myAny = 10;
+console.log("changed to number: ", myAny)
+
+myAny = false;
+console.log("changed to boolean: ", myAny)
+
