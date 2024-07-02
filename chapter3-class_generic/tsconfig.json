@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES6",   
+    // 모듈 코드의 형식을 지정 ( 어떠한 모듈을 사용할지 지정 )   
+    "module": "CommonJS",       
+    "esModuleInterop": true,      
+    // 파일 이름 대소문자 구분 강요                      
+    "forceConsistentCasingInFileNames": true,     
+    "strict": true,                                        
+    "skipLibCheck": true ,
+    // tsc(ts 컴파일러)가 컴파일 된 js 파일들을 저장할 폴더 지정 -> 여기선 dist 폴더가 생기고 dist 폴더 파일 내에 저장됨
+    "outDir": "dist",
+    "noUncheckedIndexedAccess": true ,
+    // // 기본 설정 변경
+    // "lib": ["ES2022", "DOM"]                
+  },
+  // include는 컴파일러 속성에 들어가지 않음
+  // 모든 ts 파일들이 저장되는 시점 역할 -> 폴더명 지정
+  // src/**/* === src폴더/모든폴더/모든파일
+  "include": ["src/**/*"]
+}
